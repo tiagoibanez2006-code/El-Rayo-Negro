@@ -1,28 +1,29 @@
-// El Rayo Negro - Script principal
+const secciones = document.querySelectorAll(
+    ".servicios, .trabajos, .nosotros, .contacto"
+);
 
-console.log("El Rayo Negro cargado correctamente");
+
+function mostrarSecciones(){
+
+    const alturaPantalla = window.innerHeight;
 
 
-// Animación al aparecer elementos al hacer scroll
+    secciones.forEach(seccion => {
 
-const elementos = document.querySelectorAll(".card, .proyecto, .nosotros-texto");
+        const posicion = seccion.getBoundingClientRect().top;
 
-const mostrarElemento = () => {
 
-    elementos.forEach(elemento => {
+        if(posicion < alturaPantalla - 100){
 
-        const posicion = elemento.getBoundingClientRect().top;
-        const alturaPantalla = window.innerHeight;
+            seccion.classList.add("visible");
 
-        if (posicion < alturaPantalla - 100) {
-            elemento.classList.add("mostrar");
         }
 
     });
 
-};
+}
 
 
-window.addEventListener("scroll", mostrarElemento);
+window.addEventListener("scroll", mostrarSecciones);
 
-mostrarElemento();
+mostrarSecciones();
