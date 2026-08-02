@@ -880,3 +880,87 @@ width:100%;
 filter:invert(1);
 
 }
+
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+
+@media (max-width:768px){
+
+header{
+    padding:12px 20px;
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.hero{
+    height:100vh;
+    padding:0 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1;
+}
+
+.hero .descripcion{
+    font-size:18px;
+    max-width:100%;
+}
+
+.botones{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+}
+
+.botones .btn{
+    width:260px;
+    text-align:center;
+}
+
+.contenedor-servicios{
+    grid-template-columns:1fr;
+}
+
+.galeria{
+    grid-template-columns:1fr;
+}
+
+.nosotros{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.nosotros img{
+    width:100%;
+}
+
+.audio-grid{
+    grid-template-columns:1fr;
+}
+
+.contacto{
+    flex-direction:column;
+    text-align:center;
+    gap:30px;
+}
+
+.contacto-logo img{
+    width:180px;
+}
+
+footer{
+    text-align:center;
+}
+
+}
