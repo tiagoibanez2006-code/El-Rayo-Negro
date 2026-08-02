@@ -811,3 +811,73 @@ header::after {
 .overlay {
     pointer-events: none;
 }
+
+/* AUDIO */
+
+.audio{
+
+padding:100px 8%;
+
+background:#090909;
+
+}
+
+.audio-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+margin-top:50px;
+
+}
+
+.audio-card{
+
+background:#111;
+
+padding:30px;
+
+border-radius:15px;
+
+border:1px solid #222;
+
+transition:.3s;
+
+}
+
+.audio-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#e60000;
+
+box-shadow:0 0 25px rgba(230,0,0,.25);
+
+}
+
+.audio-card h3{
+
+color:#fff;
+
+margin-bottom:10px;
+
+}
+
+.audio-card p{
+
+color:#bcbcbc;
+
+margin-bottom:20px;
+
+}
+
+.audio-card audio{
+
+width:100%;
+
+filter:invert(1);
+
+}
