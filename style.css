@@ -839,7 +839,7 @@ header::after {
 
 .audio-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+    grid-template-columns:repeat(2,1fr);
     gap:35px;
 
 }
@@ -851,6 +851,11 @@ header::after {
     padding:30px;
     transition:.35s;
     text-align:left;
+    min-height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
 }
 
 .audio-card:hover{
@@ -876,7 +881,6 @@ header::after {
     width:100%;
 }
 width:100%;
-
 filter:invert(1);
 
 }
