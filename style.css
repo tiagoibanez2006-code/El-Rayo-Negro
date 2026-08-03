@@ -1011,3 +1011,16 @@ footer{
 .audio-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 }
+
+@media(max-width:768px){
+
+    .audio-grid{
+        grid-template-columns:1fr !important;
+        width:100%;
+    }
+
+    .audio-card{
+        width:100% !important;
+    }
+
+}
