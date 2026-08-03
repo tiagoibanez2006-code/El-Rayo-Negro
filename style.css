@@ -841,7 +841,6 @@ header::after {
     display:grid;
     grid-template-columns:repeat(2,1fr);
     gap:35px;
-
 }
 
 .audio-card{
@@ -855,7 +854,6 @@ header::after {
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-}
 }
 
 .audio-card:hover{
@@ -879,10 +877,7 @@ header::after {
 
 .audio-card audio{
     width:100%;
-}
-width:100%;
-filter:invert(1);
-
+    filter:invert(1);
 }
 
 /* ========================= */
